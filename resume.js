@@ -308,11 +308,11 @@ let showTips = true;
 }
 
  function loadSampleData() {
-    document.getElementById('name').value = 'Alex Johnson';
-    document.getElementById('title').value = 'Frontend Developer';
+    document.getElementById('name').value = 'Vijay Kumar';
+    document.getElementById('title').value = 'Game Developer';
     document.getElementById('email').value = 'alex.johnson@email.com';
-    document.getElementById('phone').value = '+1 234 567 8900';
-    document.getElementById('location').value = 'San Francisco, CA';
+    document.getElementById('phone').value = '+91 23456 56734';
+    document.getElementById('location').value = 'India';
     document.getElementById('summary').value = 'Passionate frontend developer with experience in React and modern web technologies. Enthusiastic about creating user-friendly interfaces and learning new technologies.';
     document.getElementById('skills').value = 'React, JavaScript, HTML/CSS, Git, Tailwind CSS, Problem Solving';
 
@@ -328,7 +328,7 @@ let showTips = true;
         id: 1,
         institution: 'State University',
         degree: 'Bachelor of Science in Computer Science',
-        year: '2019 - 2023'
+        year: '2021 - 2025'
     }];
 
      resumeData.projects = [{
