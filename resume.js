@@ -310,7 +310,7 @@ let showTips = true;
  function loadSampleData() {
     document.getElementById('name').value = 'Vijay Kumar';
     document.getElementById('title').value = 'Game Developer';
-    document.getElementById('email').value = 'alex.johnson@email.com';
+    document.getElementById('email').value = 'xyz@email.com';
     document.getElementById('phone').value = '+91 23456 56734';
     document.getElementById('location').value = 'India';
     document.getElementById('summary').value = 'Passionate frontend developer with experience in React and modern web technologies. Enthusiastic about creating user-friendly interfaces and learning new technologies.';
@@ -361,3 +361,4 @@ let showTips = true;
  renderExperience();
 renderEducation();
 renderProjects();
+
