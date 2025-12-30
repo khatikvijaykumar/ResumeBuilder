@@ -47,7 +47,8 @@
                 <div class="particle"></div>
             </div>
             <div class="hero-title">📄 Resume Builder</div>
-            <div class="hero-subtitle">Create Your Professional Resume in Minutes <p>Visitors: <span id="visits">0</span></p> </div>
+            <div class="hero-subtitle">Create Your Professional Resume in Minutes <p>Visitors:  <img src="https://hits.seeyoufarm.com/api/count/incr?url=https://khatikvijaykumar.github.io/ResumeBuilder/&format=svg"
+       alt="Visitors" /></p> </div>
             
             <div class="hero-buttons">
                 <a href="resume.html">
@@ -186,27 +187,10 @@
 
     </div>
     
-<script>
-  if (!sessionStorage.getItem("visited")) {
-    fetch('https://api.countapi.xyz/hit/khatikvijaykumar-resumebuilder/visits')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('visits').innerText = data.value;
-      });
-    sessionStorage.setItem("visited", "true");
-  } else {
-    fetch('https://api.countapi.xyz/get/khatikvijaykumar-resumebuilder/visits')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('visits').innerText = data.value;
-      });
-  }
-</script>
-
-
 </body>
 
 </html>
+
 
 
 
