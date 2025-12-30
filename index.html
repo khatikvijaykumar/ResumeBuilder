@@ -186,18 +186,28 @@
 
     </div>
     
-
 <script>
-  fetch('https://api.countapi.xyz/hit/khatikvijaykumar.github.io/ResumeBuilder/')
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById('visits').innerText = data.value;
-    });
+  if (!sessionStorage.getItem("visited")) {
+    fetch('https://api.countapi.xyz/hit/khatikvijaykumar-resumebuilder/visits')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('visits').innerText = data.value;
+      });
+    sessionStorage.setItem("visited", "true");
+  } else {
+    fetch('https://api.countapi.xyz/get/khatikvijaykumar-resumebuilder/visits')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('visits').innerText = data.value;
+      });
+  }
 </script>
+
 
 </body>
 
 </html>
+
 
 
 
