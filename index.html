@@ -47,7 +47,8 @@
                 <div class="particle"></div>
             </div>
             <div class="hero-title">📄 Resume Builder</div>
-            <div class="hero-subtitle">Create Your Professional Resume in Minutes</div>
+            <div class="hero-subtitle">Create Your Professional Resume in Minutes <p>Visitors: <span id="visits">0</span></p> </div>
+            
             <div class="hero-buttons">
                 <a href="resume.html">
                     <button class="hero-btn hero-btn-primary">Get Started Free</button>
@@ -184,7 +185,18 @@
         </div>
 
     </div>
+    
+
+<script>
+  fetch('https://api.countapi.xyz/hit/yourusername.github.io/home')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('visits').innerText = data.value;
+    });
+</script>
+
 </body>
 
 </html>
+
 
